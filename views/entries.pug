@@ -1,0 +1,40 @@
+extends layout
+
+block style
+    style
+        include ../static/styleCard.css
+        include ../static/card.css
+    block title
+        title Entries | altrNATIVE
+ 
+block content
+    -var message = msg || '';
+    h2=message
+    -var n = 1
+    -var dataB = databaseSent;
+    .content
+        .cards
+            #cardSpl
+                .code
+
+                    .colorCode
+                        h5 Color Code:
+                    .divChina
+                        h4 CHINESE
+                    .divOthers
+                        h4 ALTRNATIVE
+                    .divCat
+                        h4 CATEGORY
+                    .hideButton
+                        button.btn.btnH(onclick="FunctionH()") Close
+            each val in dataB
+        
+                include ../views/partials/list_cards.pug
+
+block script 
+    script
+        include ../static/filter.js
+
+    
+        
+    

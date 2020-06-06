@@ -1,0 +1,138 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+}
+.gradiantDiv{
+    width: 100%;
+    background-color: #efdecd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.formDiv{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.country{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.chineseLabel{
+    
+    display: flex;
+    
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.otherLabel{
+    display: flex;
+    
+    width: 50%;
+    padding: 10px;
+    flex-direction: column;
+    
+}
+
+input{
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+    background-color: #edc9af;
+    color: white;
+  }
+
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#textInput{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 25px;
+    border: none;
+    background-color: #edc9af;
+    color: white;
+    resize: vertical;
+}
+.messages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.commonProductType{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+
+select{
+    margin: 8px 0;
+    box-sizing:border-box ;
+    border: none;
+    font-size: 25px ;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color:#edc9af; ;
+}
+
+  @media only screen and (max-width: 1010px) {
+    form{
+        width: 100%;
+        padding: 0;
+        border: none;
+        
+    }
+    .country{
+        flex-direction: column;
+        
+    }
+    .chineseLabel{
+        width: 100%;
+    }
+    
+    .otherLabel{ 
+        width: 100%; 
+    }
+    .commonProductType,.otherLabel,.chineseLabel{
+
+        padding: 0;
+       
+    }
+   .formDiv .btn{
+       width: 100%;
+   }
+   #textInput{
+    
+    width: 100%;
+}
+  }

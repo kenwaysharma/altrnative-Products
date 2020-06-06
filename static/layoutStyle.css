@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.gradiantMainDiv{
+	background-color: #efdecd;
+}
+
+.navbar .btn{
+	padding: 10px 20px 10px 20px;
+	border: 1px solid #c19a6b;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  	color: black;
+					
+	background-color:  transparent;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	cursor: pointer;
+}
+
+.btn{
+	padding: 10px 20px 10px 20px;
+	border: none;
+  	
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	cursor: pointer;
+}
+.mobileView{
+	width: 100%;
+
+}
+.mobileView label{
+
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
+
+.btn:hover{
+    color: white;
+	transition: all 0.5s;
+	background-color: #c19a6b;
+}
+header{
+	width: 100%;
+	background-color: #efdecd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.navbar{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 50px;
+
+
+}
+
+.logo{
+	width: 30%;
+}
+.logo img{
+	width: 150px;
+	
+	margin-left: 50px;
+	
+}
+.footerDiv img{
+	width: 150px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	background-color: #edc9af;
+}
+
+
+ul{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	list-style-type: none;
+	justify-content: center;
+}
+
+ul li{
+	margin: 10px;
+}
+
+.dropDown{
+	background-color: #efdecd;
+	display: flex;
+	flex-direction: column;
+	display: none;
+	position: absolute;
+	text-decoration: none;
+	padding:10px;
+	border: 1px solid #edc9af;
+}
+.splbtn{
+	margin: 5px;
+}
+
+ul li:hover .dropDown{
+	display: flex;
+	text-decoration: none;
+
+	}
+	
+
+.footerDiv{
+	width: 100%;
+}
+
+.mainFooter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	
+}
+
+.subFooter{
+	background-color: #e8b997;
+	width: 100%;
+	height: 400px;
+	padding: 20px;
+}
+
+.atmaNirbhar{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+}
+
+.makeIndia{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+}
+
+.version{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+}
+
+@media only screen and (max-width: 780px) {
+	header{
+		width: 100%;
+
+	}
+	.navbar .btn{
+		font-size: 15px;
+		padding:8px ;
+		width: 100%;
+		overflow-x: hidden;
+	}
+	
+	.navbar{
+		margin: 10px;
+	}
+	.navbar ul{
+		width: 100px;
+		flex-direction: column;
+	}
+	li{
+		margin: 5px;
+	}
+
+	.btn{
+		padding: 5px;
+		font-size: 20px;
+		width: min-content;
+	}
+	body{
+		width: 100%;
+		
+	}
+
+
+  }
+
+  @media only screen and (max-width: 365px){
+	  .mainFooter{
+		  display: flex;
+		  justify-content: center;
+		  flex-direction: column;
+		  height: fit-content;
+	  }
+
+  }

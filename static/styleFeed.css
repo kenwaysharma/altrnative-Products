@@ -1,0 +1,119 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.gradiantDiv{
+
+    background-color: #efdecd
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+h1{
+    font-size: 60px;
+}
+
+.heading{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.formDiv{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.feedBack{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.formDiv .btn{
+    width: 80%;
+}
+
+
+
+
+input{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+    background-color: #edc9af;
+    color: white;
+  }
+#textInput{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 25px;
+    border: none;
+    background-color: #edc9af;
+    color: white;
+    resize: vertical;
+}
+
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.messages{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .content{
+        flex-direction: column;
+    
+        
+    }
+    .heading{
+        width: 100%;
+    }
+    .formDiv{
+        width: 100%;
+        
+    }
+    .feedBack{
+        width: 100%;
+    }
+   .formDiv .btn{
+       width: 100%;
+   }
+}

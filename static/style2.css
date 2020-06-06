@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.contentAll{
+    box-sizing: border-box;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.mainHeading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 60px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 45px;
+    }
+    }

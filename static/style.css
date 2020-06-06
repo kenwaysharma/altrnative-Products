@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+table, td, th {  
+   
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  
+  }
+  
+  th, td {
+    
+    padding: 15px;
+  }
+
+th{
+  
+  text-align: center;
+  background-color: #edc9af;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.table{
+    display: flex;
+    margin: 25px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+}
+
+
+.rating .btn{
+ font-size: 10px;
+}
+
+#search input{
+  box-sizing:border-box ;
+  border: none;
+  font-size: 15px ;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color:#edc9af ;
+}
+
+h3{
+  margin-bottom: 20px;
+}
+
+.tips{
+  width: 90%;
+  margin: 25px;
+}
+
+.content{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  
+  
+}
+
+
+.cards{
+  
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+  
+  height: min-content;
+
+ 
+
+}
+
+.chinaVal{
+ color: rgb(255, 91, 69)
+}
+
+.otherVal{
+  color: rgb(110, 102, 255);
+  
+}
+.wrap{
+  word-wrap: normal;
+}
+.catVal{
+  color: rgb(245, 130, 239);
+}
+.entryNum{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.colorCode{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.colorCode h5{
+  padding: 5px;
+  text-decoration: underline;
+  
+}
+.divChina{
+  min-width: 40px;
+  height: 20px;
+  background-color: rgb(255, 91, 69);
+ 
+}
+.divOthers{
+  min-width: 40px;
+  height: 20px;
+  background-color: rgb(110, 102, 255);
+}
+.divCat{
+  min-width: 40px;
+  height: 20px;
+  background-color: rgb(245, 130, 239);
+}
+h4{
+  padding-right:30px ;
+  padding-left: 5px;
+}
+.mdi td{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+td img{
+  width: 50px;
+}
+.chinaVal, .otherVal, .catVal{
+
+}
+@media only screen and (max-width: 530px) {
+  table, td, th {  
+    
+    text-align: left;
+  }
+  
+  table {
+    
+    border-collapse: collapse;
+    
+
+  }
+  
+  th, td {
+    
+    padding: 5px;
+  }
+
+th{
+  text-align: center;
+  background-color: #edc9af;
+  position: sticky;
+}
+.table{
+  
+    margin: 1px;
+    overflow: scroll;
+}
+
+#search{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#search input{
+  box-sizing:border-box ;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+h3{
+  margin-bottom: 20px;
+}
+
+.tips{
+  width: 90%;
+  margin: 10px;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:10px;
+  
+  
+}
+
+
+.colorCode{
+  align-items: center;
+  flex-direction: column;
+  
+  margin: 15px;
+  padding: 5px;
+  
+}
+.divChina{
+  width: 40px;
+  height: 20px;
+  background-color: rgb(255, 91, 69);
+ 
+}
+.divOthers{
+  width: 40px;
+  height: 20px;
+  background-color: rgb(110, 102, 255);
+}
+.divCat{
+  width: 40px;
+  height: 20px;
+  background-color: rgb(245, 130, 239);
+}
+h4{
+  padding-right:13px ;
+  padding-left: 5px;
+}
+}
+
+
+@media only screen and (max-width: 882px) {
+  
+  .table{
+    margin: 2px;
+    overflow: scroll;
+}
+  .content{
+    flex-direction: column;
+  }
+  .colorCode{
+    width: fit-content;
+    margin: 25px;
+    padding: 10px;
+  }
+ 
+}
+@media only screen and (max-width: 1200px) {
+  .content{
+    flex-direction: column;
+  }
+  .colorCode{
+    width: fit-content;
+    
+    margin: 25px;
+    padding: 10px;
+    
+    
+  }
+select{
+  margin-bottom: 10px;
+}
+ 
+}
+
+

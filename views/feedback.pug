@@ -1,0 +1,38 @@
+extends layout.pug
+
+block style
+    style
+        include ../static/styleFeed.css
+    block title
+        title Feedback | altrNATIVE
+
+block content
+    .gradiantDiv
+        -var message = msg || '';
+        .messages
+            .succMsg
+                h2=message
+    
+
+        .content
+            .heading
+                .headingPart
+                    h1 Feedback
+                    h3 Your feedback is important. We would love to hear from you.
+
+            .formDiv
+                form(action="/feedback" method="POST" class="myFeed")
+                    .feedBack
+        
+                        label(for="Name") Name:
+                        input(type="text" id="name" name="name")
+
+                        label(for="Email") Email:
+                        input(type="email" id="email" name="email")
+
+                        label(for="Feedback" ) Feedback:
+                        textarea(name="feedback" id="textInput")
+
+                    button.btn Submit
+
+

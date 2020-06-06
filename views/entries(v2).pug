@@ -1,0 +1,77 @@
+extends layout
+
+block style
+    style
+        include ../static/style.css
+    block title
+        title Entries | altrNATIVE
+ 
+block content
+    -var message = msg || '';
+    h2=message
+    -var dataB = databaseSent;
+    
+
+    -var n=1;
+
+
+    .content
+        .colorCode
+            h5 Color Code:
+            .divChina
+            h4 Chinese
+            .divOthers
+            h4 Alternatives
+            .divCat
+            h4 Categories
+        
+        #search
+            input(type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name...")
+            input(type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search by 'Made in' country...")
+        .entryNum
+            h2 Total Entries:
+            h1=dataB.length
+    .table  
+        table(id='myTable')
+            tr.myTable
+              
+              th S.No
+              th.chinaVal Product Name
+              th.chinaVal Product Company
+              th.otherVal Product Name
+              th.otherVal Product Company
+              th.otherVal Made in
+              th.otherVal Company Country
+              th.catVal Product Category
+              th.catVal Sub Category
+              
+            each val in dataB
+                tr.search  
+                    td=n++
+                    
+                    td.chinaVal=val.chinese.name
+                    td.chinaVal=val.chinese.company
+                    td.otherVal=val.other.name
+                    td.otherVal=val.other.company
+                    td.otherVal.wrap=val.other.madeIn
+                 
+                    if (val.other.country==""||undefined||null)
+                        td.otherVal=val.other.country="(not provided)" 
+                    else
+                        td.otherVal=val.other.country
+                    
+
+                    td.catVal=val.productCategory.mainCategory
+                    if (val.productCategory.subCategory==""||undefined||null)
+                        td.catVal="(not provided)"
+                    else
+                        td.catVal=val.productCategory.subCategory
+   
+                    
+block script 
+    script
+        include ../static/filter.js
+
+    
+        
+    

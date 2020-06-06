@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  
+  
+}
+
+#cardSpl{
+  border-radius: 5px;
+  min-width: 300px;
+  margin: 20px;
+  height: 500px;
+  padding: 10px;
+  color: white;
+  background-color: 	#383838;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
+}
+.code{
+  margin: 20px;
+  
+}
+.btnH{
+border: 0;
+background-color: grey;
+}
+.cards{
+  
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: min-content;
+
+ 
+
+}
+
+.chinaVal{
+ color: rgb(255, 91, 69)
+}
+
+.otherVal{
+  color: rgb(110, 102, 255);
+  
+}
+.wrap{
+  word-wrap: normal;
+}
+.catVal{
+  color: rgb(245, 130, 239);
+}
+
+.colorCode{
+
+}
+.colorCode h5{
+  padding: 5px;
+  text-decoration: underline;
+  
+}
+.divChina{
+  margin: 20px;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(255, 91, 69);
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+.divOthers{
+  margin: 20px;
+  display: flex;
+justify-content: center;
+align-items: center;
+ 
+  height: 60px;
+  background-color: rgb(110, 102, 255);
+}
+.divCat{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  height: 60px;
+  background-color: rgb(245, 130, 239);
+}
+
+.chinaVal, .otherVal, .catVal{
+
+}
+@media only screen and (max-width: 530px) {
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 882px) {
+  
+
+  
+ 
+}
+@media only screen and (max-width: 1200px) {
+
+
+ 
+}
+
+
