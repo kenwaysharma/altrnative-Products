@@ -2,15 +2,38 @@
 
 
 *{
+	scroll-behavior: smooth;
     margin: 0;
-    padding: 0;
+	padding: 0;
+	
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: orange; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 .gradiantMainDiv{
 	background-color: #efdecd;
 }
+
 
 .navbar .btn{
 	padding: 10px 20px 10px 20px;
@@ -19,7 +42,7 @@ body{
 
   	color: black;
 					
-	background-color:  transparent;
+	background-color:   #efdecd;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
@@ -36,6 +59,13 @@ body{
   	display: inline-block;
   	cursor: pointer;
 }
+
+li .btn.splTextalt{
+    background-color: tomato;
+}
+
+
+
 .mobileView{
 	width: 100%;
 
@@ -155,7 +185,7 @@ ul li:hover .dropDown{
 	width: 300px;
 }
 
-.version{
+.india{
 	display: flex;
 	justify-content: center;
 	width: 300px;

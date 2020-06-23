@@ -102,6 +102,10 @@ align-items: center;
 .chinaVal, .otherVal, .catVal{
 
 }
+.cardContent h3,h5{
+  width: 200px;
+  text-overflow: clip;
+}
 @media only screen and (max-width: 530px) {
 
 

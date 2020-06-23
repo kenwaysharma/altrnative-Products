@@ -1,15 +1,24 @@
 const express = require('express');
-
-const path = require('path');
-
-const routes = require('./routes/index');
 const app = express();
-app.use(express.json())
-const bodyParser = require('body-parser');
+const path = require('path');
+const bodyParser=require('body-parser')
+const routes = require('./routes/index');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }))
+ 
+// parse application/json
+app.use(bodyParser.json())
+ 
+
+
+
+//app.use(express.json())
+//const bodyParser = require('body-parser');
 //Body Parser
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.json());
 
 app.use('/', routes)
 

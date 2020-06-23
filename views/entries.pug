@@ -5,7 +5,7 @@ block style
         include ../static/styleCard.css
         include ../static/card.css
     block title
-        title Entries | altrNATIVE
+        title Altrnatives | altrNATIVE
  
 block content
     -var message = msg || '';
@@ -28,9 +28,52 @@ block content
                     .hideButton
                         button.btn.btnH(onclick="FunctionH()") Close
             each val in dataB
-        
-                include ../views/partials/list_cards.pug
 
+                .card
+                    .num
+                        h3=n++
+                    .cardContent
+                        .chineseD
+                            h4.chinaVal 
+                                u
+                                    | Chinese Product
+                            br
+                            h5.chinaVal="Name: "
+                            h3=val.chinese.name
+                
+                            h5.chinaVal="Company: "
+                            h3=val.chinese.company
+                            br
+                        .otherD
+                            h4.otherVal
+                                u 
+                                    | Altrnative Product
+                            br
+                            h5.otherVal="Name: "
+                            h3=val.other.name
+                
+                            h5.otherVal="Made In: "
+                            h3=val.other.madeIn
+                
+                            h5.otherVal="Company: "
+                            h3=val.other.company
+                
+                            h5.otherVal="Company's Origin: "
+                            h3=val.other.country
+                            br
+                
+                        .categoryD
+                            h4.catVal
+                                u
+                                    | Department Details
+                            br
+                            h5.catVal="Category: "
+                            h3=val.productCategory.mainCategory
+                
+                            h5.catVal="Sub Category: "
+                            h3=val.productCategory.subCategory
+                            a(href="/entries/edit/"+val._id)="Edit"
+                
 block script 
     script
         include ../static/filter.js

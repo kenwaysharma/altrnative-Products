@@ -1,12 +1,10 @@
 const express = require('express');
+
 const router = express.Router();
 
-const bodyParser = require('body-parser');
 
-//Body Parser
 
-router.use(bodyParser.urlencoded({ extended: true }));
-router.use(bodyParser.json());
+
 
 //Mongoose/MongoDB things
 const mongoose = require('mongoose');
@@ -18,6 +16,10 @@ const datab= new mongoose.model('databaseEntries')//database collection name
 const feedDB= new mongoose.model('feedBack')//database collection name
 
 
+//Home Page
+router.get('/home', (req, res) => {
+  res.render('home',{ title: 'Home' });
+});
 
 //About Page
 router.get('/about', (req, res) => {
@@ -40,40 +42,7 @@ router.get(['/','/entries'],(req, res) => {
     
 })
 
-router.get('/entries/user/:id',(req, res) => {
-console.log(req.params.id)
-database.findById(req.params.id, function(err,entry){
-  if (err){
-    console.log(err);
 
-  }else{
-    
-   res.render('edit', {databaseSent: entry})
-  }
-})
-  
-})
-//router.post('/entries/user/:id', (req, res) => {
-//  let entry={};
-//  console.log(JSON.stringify(req.body.other))
-//
-//  
-//  let query = {_id:req.params.id}
-//  database.update(query,entry,function(err){
-//    if(err){
-//      console.log(err);
-//      return;
-//    }else{
-//      res.redirect('entries')
-//    }
-//  })
-//    .then(() => { res.render('edit.pug', {msg: "Added Succesfully"}); 
-//    })
-//    .catch((err) => {
-//      console.log(err);
-//      res.render('edit.pug', {msg: "Something went wrong! Make sure no field is empty."})
-//}) 
-//})
 
 //Post Page
 router.get('/secretTop', (req, res) => {
@@ -82,9 +51,16 @@ router.get('/secretTop', (req, res) => {
 })
 router.post('/secretTop', (req, res) => {
   const data = new datab()
-
+  data.chinese.name=                  req.body.chinese_name
+  data.chinese.company=               req.body.chinese_company
+  data.other.name=                    req.body.other_name
+  data.other.company=                 req.body.other_company
+  data.other.country=                 req.body.other_country
+  data.other.madeIn=                  req.body.other_madeIn
+  data.productCategory.mainCategory=  req.body.productCategory_mainCategory
+  data.productCategory.subCategory=   req.body.productCategory_subCategory
+  console.log(data)
   
-  console.log(req.body.chinese.name)
   data.save()
     .then(() => { res.render('secretTop.pug', {msg: "Added Succesfully"}); 
     })
@@ -95,7 +71,45 @@ router.post('/secretTop', (req, res) => {
 })
 
 
+//Edit Routes
 
+//get Edit
+router.get('/entries/edit/:id', (req,res)=>{
+  let query={_id: req.params.id};
+  console.log(query)
+  database.findById(query, function(err,entry){
+      
+    if (err){
+      
+      console.log(err);
+  
+    }else{  
+     res.render('edit', { entrySent: entry})
+    }
+  })
+})
+
+//post Edit
+router.post('/entries/edit/:id',(req, res) => {
+let entryUp={
+  "chinese.name":req.body.chinese_name,
+  "chinese.company":req.body.chinese_company,
+  "other.name": req.body.other_name,
+  "other.company": req.body.other_company,
+  "other.madeIn": req.body.other_madeIn,
+  "other.country": req.body.other_company,
+  "productCategory.mainCategory": req.body.productCategory_mainCategory,
+  "productCategory.subCategory": req.body.productCategory_subCategory
+}
+  let query={_id:req.params.id}
+  database.findOneAndUpdate(query, entryUp, (err, doc) => {
+      if (err) {
+          console.log("Something wrong when updating data!");
+      }
+  
+      res.redirect('/entries');
+  });
+})
 
 //Feedback Page
 router.get('/feedback', (req, res) => {
