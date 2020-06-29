@@ -1,145 +1,222 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .content{
 
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: min-content;
-  
-  
+display: -webkit-box;
+
+display: -ms-flexbox;
+
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+height: -webkit-min-content;
+height: -moz-min-content;
+height: min-content;
+
+
 }
 #search{
-  width: fit-content;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
 }
 #search input{
 
-  width: 400px;
-  min-height: 50px;
+width: 400px;
+min-height: 50px;
 
-  border: none;
-  background-color: salmon;
-  font-size: 20px;
-  padding: 20px;  
-  margin: 10px;
-  border-radius: 7px;
-  color: white;
-  
-  box-shadow: 2px 3px 63px -12px rgba(237,126,95,1);
+border: none;
+background-color: salmon;
+font-size: 20px;
+padding: 20px;  
+margin: 10px;
+border-radius: 7px;
+color: white;
+
+-webkit-box-shadow: 2px 3px 63px -12px rgba(237,126,95,1);
+
+        box-shadow: 2px 3px 63px -12px rgba(237,126,95,1);
+}
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: white;
+opacity: 1; /* Firefox */
+}
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: white;
+opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: white;
+opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: white;
+opacity: 1; /* Firefox */
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+color: white;
+opacity: 1; /* Firefox */
 }
 #cardSpl{
-  border-radius: 5px;
-  min-width: 300px;
-  margin: 20px;
-  height: 500px;
-  padding: 10px;
-  color: white;
-  background-color: 	#383838;
- display: flex;
- justify-content: center;
- align-items: center;
-  box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
+border-radius: 5px;
+min-width: 300px;
+margin: 20px;
+height: 500px;
+padding: 10px;
+color: white;
+background-color: 	#383838;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+   -ms-flex-pack: center;
+       justify-content: center;
+-webkit-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+-webkit-box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
+        box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
 }
 .code{
-  margin: 20px;
-  
+margin: 20px;
+
 }
 .btnH{
 border: 0;
 background-color: grey;
 }
 .cards{
-  
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: min-content;
 
- 
+-webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
+        justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+width: 100%;
+height: -webkit-min-content;
+height: -moz-min-content;
+height: min-content;
+
+
 
 }
 
 .chinaVal{
- color: #cdd631;
+color: #cdd631;
 }
 
 .otherVal{
-  color: rgb(110, 102, 255);
-  
+color: rgb(110, 102, 255);
+
 }
 .wrap{
-  word-wrap: normal;
+word-wrap: normal;
 }
 .catVal{
-  color: rgb(245, 130, 239);
+color: rgb(245, 130, 239);
 }
 
 .colorCode{
 
 }
 .colorCode h5{
-  padding: 5px;
-  text-decoration: underline;
-  
+padding: 5px;
+text-decoration: underline;
+
 }
 .divChina{
-  margin: 20px;
-  width: 200px;
-  height: 60px;
-  background-color: #cdd631;
+margin: 20px;
+width: 200px;
+height: 60px;
+background-color: #cdd631;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
-align-items: center;
- 
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+
 }
 .divOthers{
-  margin: 20px;
-  display: flex;
-justify-content: center;
-align-items: center;
- 
-  height: 60px;
-  background-color: rgb(110, 102, 255);
+margin: 20px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+
+height: 60px;
+background-color: rgb(110, 102, 255);
 }
 .divCat{
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   
-  height: 60px;
-  background-color: rgb(245, 130, 239);
+margin: 20px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+ 
+height: 60px;
+background-color: rgb(245, 130, 239);
 }
 
 .chinaVal, .otherVal, .catVal{
 
 }
 .cardContent h3,h5{
-  width: 200px;
-  text-overflow: clip;
+width: 200px;
+-o-text-overflow: clip;
+   text-overflow: clip;
 }
 
 @media only screen and (max-width: 530px) {
 
 
 #search input{
-  width: fit-content;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
 }
 
 
 
 
 }
-
 
 

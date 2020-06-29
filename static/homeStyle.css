@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .tape .btn{
@@ -8,6 +15,8 @@
 .tape{
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0px 0px 20px 0px;
 }
@@ -35,12 +44,22 @@ h4{
     font-size: 20px;
 }
 .partFull{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
-    justify-content: center;
+    -webkit-box-pack: center;
+    
+        -ms-flex-pack: center;
+    
+            justify-content: center;
 }
 .partFull .card{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -56,17 +75,29 @@ h4{
 
 }
 .tape1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 200px;
 }
 
 
 .tape1 .part1 {
 
+display: -webkit-box;
+
+display: -ms-flexbox;
+
 display: flex;
-justify-content: flex-end;
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
 width: 50%;
 
     
@@ -82,8 +113,12 @@ width: 50%;
 
 
 .tape2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-image: url("images/svg/orange cover.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -99,6 +134,8 @@ width: 50%;
     
     background: rgba(104,173,237,1);
     width: 700px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     margin-top:500px;
     margin-left:60px;
@@ -109,17 +146,30 @@ width: 50%;
 
 
 .tape2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 .tape2 .buttonDiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 } 
 
 .part1 .btn{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -157,17 +207,26 @@ flex-direction: column;
   
     .slideInLeftDelay {
         
-        animation-name: slideInLeft;
+        -webkit-animation-name: slideInLeft;
         
-        animation-duration: 1s;
+                animation-name: slideInLeft;
         
-        animation-fill-mode: both;
-        animation-delay: 0.1s;
+        -webkit-animation-duration: 1s;
+        
+                animation-duration: 1s;
+        
+        -webkit-animation-fill-mode: both;
+        
+                animation-fill-mode: both;
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
         }
         @keyframes slideInLeft {
         0% {
         
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        
+                transform: translateX(-100%);
         visibility: visible;
         }
         100% {
@@ -178,12 +237,16 @@ flex-direction: column;
         @keyframes slideInLeft {
         0% {
         
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        
+                transform: translateX(-100%);
         visibility: visible;
         }
         100% {
         
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        
+                transform: translateX(0);
         }
         } 
       
@@ -192,12 +255,16 @@ flex-direction: column;
 
 
 .tape3{
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
 }
 .tape3 .part1{
     background: #ff722b;
     width: 700px;
     text-align: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     margin-top:300px;
     
@@ -211,7 +278,8 @@ flex-direction: column;
     margin-right: 25px;
     
     width: 80%;
-    box-shadow: 0px 2px 148px 28px #f5d3a4;
+    -webkit-box-shadow: 0px 2px 148px 28px #f5d3a4;
+            box-shadow: 0px 2px 148px 28px #f5d3a4;
 
 
 }
@@ -221,10 +289,19 @@ flex-direction: column;
     background-image: url('images/svg/orange strip 2.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .tape4 .part1,part2{
@@ -236,11 +313,18 @@ width: 100%;
 }
 
 .tape4 .part1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center ;
+    -webkit-box-pack: center ;
+        -ms-flex-pack: center ;
+            justify-content: center ;
     background-color:  #ffa940;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
-    box-shadow: 10px 10px 211px 24px rgba(255,161,130,1);
+    -webkit-box-shadow: 10px 10px 211px 24px rgba(255,161,130,1);
+            box-shadow: 10px 10px 211px 24px rgba(255,161,130,1);
     margin-bottom: 20px;
     color: white;
     padding-left: 30px;
@@ -249,19 +333,37 @@ width: 100%;
 }
 
 .oneTick,.twoTick,.threeTick{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     
-    align-items: center;
+    -webkit-box-align: center;
+    
+        -ms-flex-align: center;
+    
+            align-items: center;
     margin: 70px;
 }
 .ticks{
     background-color:wheat;
     border-radius: 1500px 0px 1500px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 .ticks h4{
@@ -280,6 +382,10 @@ background-size: cover;
 .tape5 .part1{
     background: #ff722b;
     width: 60%;
+    
+    height: -webkit-min-content;
+    
+    height: -moz-min-content;
     
     height: min-content;
     margin-top:75px;
@@ -350,6 +456,8 @@ h3{
 }
 @media only screen and (max-width: 1355px) {
     .btn{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
@@ -369,8 +477,11 @@ h3{
 }
 
 .tape2 .partFull {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
@@ -380,7 +491,8 @@ h3{
     margin-right: 25px;
     
     width: 80%;
-    box-shadow: 0px 2px 148px 28px #f5d3a4;
+    -webkit-box-shadow: 0px 2px 148px 28px #f5d3a4;
+            box-shadow: 0px 2px 148px 28px #f5d3a4;
 
 
 }
@@ -396,17 +508,32 @@ h3{
 
 @media only screen and (max-width: 1070px) {
 .tape3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
  
 }
 .tape3 .part1{
     margin-top:90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
    
     
     width: 100%;
@@ -417,11 +544,17 @@ h3{
 
 .tape3 .part2{
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .tape3 img{
     margin-top:30px;
@@ -429,8 +562,12 @@ h3{
 
 
 .tape1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 
@@ -446,12 +583,21 @@ h3{
     font-size: 80px;
 }
 .tape4 .part2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .ticks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 100px 0px 100px 0px;
     width: 500px;
     height: 100%;
@@ -461,16 +607,27 @@ h3{
     width: 300px;
 }
 .oneTick,.twoTick,.threeTick{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    
+        -ms-flex-pack: start;
+    
+            justify-content: flex-start;
     margin: 20px;
 }
 .tickCol1 .threeTick{
     margin-bottom: 0;
 }
 .tape1 .part2{
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
 } 
 }
@@ -496,13 +653,25 @@ h3{
 @media only screen and (max-width: 780px) {
     .tape1{
         padding-top: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .tape1 .part2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
@@ -524,6 +693,8 @@ h3{
     }
 
 .tape1 .part1{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 .splText{
@@ -554,4 +725,3 @@ h3{
 
 }
   
-

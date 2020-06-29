@@ -1,32 +1,41 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .cardContent{
-   margin: 20px;
-   
-}
-.cardContent h5{
-    font-size: 17px
-}
-.cardContent h4{
-    text-align: center;
-}
-.card{
-    border-radius: 5px;
-    min-width: 300px;
     margin: 20px;
-    height: 50%;
-    padding: 10px;
-    color: white;
-    background-color: 	#383838;
-   
-    box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
-}
-.remove{
-    display: none;
-}
-
-
-
-
-
-
-
-
+    
+ }
+ .cardContent h5{
+     font-size: 17px
+ }
+ .cardContent h4{
+     text-align: center;
+ }
+ .card{
+     border-radius: 5px;
+     min-width: 300px;
+     margin: 20px;
+     height: 50%;
+     padding: 10px;
+     color: white;
+     background-color: 	#383838;
+    
+     -webkit-box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
+    
+             box-shadow: 10px 10px 36px -2px rgba(0,0,0,0.57);
+ }
+ .remove{
+     display: none;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
