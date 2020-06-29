@@ -81,3 +81,89 @@ function FunctionH() {
   console.log(cardSpl)
   cardSpl.style.display="none";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Searching in product name
+function myFunctionAlt() {
+  // Declare variables
+  var input, filterAlt,i,j, searchIn,numRemove;
+  input = document.getElementById("myInput");
+  filterAlt = input.value.toUpperCase();
+ cardRemove=document.getElementsByClassName('card')
+  cardcontent=document.getElementsByClassName('cardContent')
+  value=document.getElementById('thisValue')
+  cval=document.getElementsByClassName('imp')
+  
+  for(i=0; i<cardcontent.length;i++){
+    searchIn = cval[i].innerHTML.toUpperCase()
+    console.log(searchIn.indexOf(filterAlt))
+
+   
+  
+     
+   if(searchIn.indexOf(filterAlt) > -1){
+      cardcontent[i].style.display="";
+      cardRemove[i].classList.remove('remove')
+      
+   }//if(filterAlt===''){
+    //cardcontent[i].style.display="";
+   //}
+   else{
+     cardcontent[i].style.display="none";
+     cardRemove[i].classList.add('remove')
+     
+   }
+   
+   
+
+  
+}
+}
+  // Loop through all table rows, and hide those who don't match the search query
+  //for (i = 0; i < tr.length; i++) {
+  //  td = tr[i].getElementsByTagName("td")[1];
+  //  if (td) {
+  //    txtValue = td.textContent || td.innerText;
+  //    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+  //      tr[i].style.display = "";
+  //    } else {
+  //      tr[i].style.display = "none";
+  //    }
+  //  }
+  //}
+
+//Searching in made in country
+//function myFunction2() {
+//  // Declare variables
+//  var input, filter, table, tr, td, i, txtValue;
+//  input = document.getElementById("myInput2");
+//  filter = input.value.toUpperCase();
+//  table = document.getElementById("myTable");
+//  tr = table.getElementsByTagName("tr");
+//  console.log(tr)
+//  // Loop through all table rows, and hide those who don't match the search query
+//  for (i = 0; i < tr.length; i++) {
+//    td = tr[i].getElementsByTagName("td")[5];
+//    if (td) {
+//      txtValue = td.textContent || td.innerText;
+//      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//        tr[i].style.display = "";
+//      } else {
+//        tr[i].style.display = "none";
+//      }
+//    }
+//  }
+//}

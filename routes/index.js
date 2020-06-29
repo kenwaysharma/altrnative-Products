@@ -26,6 +26,10 @@ router.get('/about', (req, res) => {
   res.render('about',{ title: 'About' });
 });
 
+router.get('/makeinindia', (req, res) => {
+  res.render('makeinindia',{ title: 'Make In India' });
+});
+
 
 //About Entries
 router.get(['/','/entries'],(req, res) => {
@@ -45,11 +49,11 @@ router.get(['/','/entries'],(req, res) => {
 
 
 //Post Page
-router.get('/secretTop', (req, res) => {
+router.get('/post', (req, res) => {
 
-  res.render('secretTop')
+  res.render('post')
 })
-router.post('/secretTop', (req, res) => {
+router.post('/post', (req, res) => {
   const data = new datab()
   data.chinese.name=                  req.body.chinese_name
   data.chinese.company=               req.body.chinese_company
@@ -62,11 +66,11 @@ router.post('/secretTop', (req, res) => {
   console.log(data)
   
   data.save()
-    .then(() => { res.render('secretTop.pug', {msg: "Added Succesfully"}); 
+    .then(() => { res.render('post.pug', {msg: "Added Succesfully"}); 
     })
     .catch((err) => {
       console.log(err);
-      res.render('secretTop.pug', {msg: "Something went wrong! Make sure no field is empty."})
+      res.render('post.pug', {msg: "Something went wrong! Make sure no field is empty."})
 }) 
 })
 

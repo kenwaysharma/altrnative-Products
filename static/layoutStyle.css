@@ -35,9 +35,10 @@ body{
 }
 
 
+
 .navbar .btn{
 	padding: 10px 20px 10px 20px;
-	border: 1px solid #c19a6b;
+	border: none;
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   	color: black;
@@ -61,7 +62,9 @@ body{
 }
 
 li .btn.splTextalt{
-    background-color: tomato;
+	background-color: tomato;
+	border: none;
+	font-weight: normal;
 }
 
 
@@ -84,6 +87,7 @@ li .btn.splTextalt{
 	background-color: #c19a6b;
 }
 header{
+background-color: tomato;
 	width: 100%;
 	background-color: #efdecd;
 	display: flex;
@@ -92,18 +96,26 @@ header{
 
 }
 .navbar{
-	width: 70%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-end;
-	margin-right: 50px;
-
+	justify-content: center;
+	align-items: center;
+	
 
 }
 
 .logo{
 	width: 30%;
 }
+nav{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
 .logo img{
+	
 	width: 150px;
 	
 	margin-left: 50px;
@@ -132,15 +144,22 @@ ul li{
 	margin: 10px;
 }
 
+.dropDown a{
+	text-decoration: underline;
+	margin-bottom: 10px;
+	color: tomato;
+}
+
 .dropDown{
 	background-color: #efdecd;
-	display: flex;
+	
 	flex-direction: column;
 	display: none;
 	position: absolute;
 	text-decoration: none;
 	padding:10px;
 	border: 1px solid #edc9af;
+	cursor: default;
 }
 .splbtn{
 	margin: 5px;
@@ -191,43 +210,125 @@ ul li:hover .dropDown{
 	width: 300px;
 }
 
-@media only screen and (max-width: 780px) {
-	header{
-		width: 100%;
 
+
+.toggle{
+	
+
+	
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 20px;
+	margin-right: 20px;
+}
+
+
+.toggle .bar{
+	border-radius: 0px;
+	height: 3px;
+	width: 100%;
+	margin: 3px;
+	background-color: red;
+	display: none;
+}
+.topnav{
+	display: flex;
+
+}
+@media only screen and (max-width: 780px) {
+.logo{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.toggle .bar{
+	display: flex;
+}
+	header{
+
+		width: 100%;
 	}
 	.navbar .btn{
 		font-size: 15px;
 		padding:8px ;
 		width: 100%;
-		overflow-x: hidden;
-	}
+		justify-content: flex-end;
 	
+		
+	}
+	.navbar img{
+		width: 30%;
+		height: auto;
+		margin-left:0;
+	}
+	nav{
+		width: 100%;
+		justify-content: flex-end;
+	}
+
 	.navbar{
 		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
 	}
 	.navbar ul{
-		width: 100px;
 		flex-direction: column;
+		align-items: flex-end;
+		width: 100%;
 	}
-	li{
+	.topnav{
+
+		display: none;
+		width: 50%;
+		border-radius: 500px 0 0px 0;
+		
+	}
+	.navbar ul .btn{
+		justify-content: flex-end;
+		align-items: flex-end;
+		width:100px;
+			}
+	
+	.topnav li{
+		align-items: flex-end;
+		justify-content: center;
+		text-align: center;
+
+	}
+li{
 		margin: 5px;
+		
 	}
+
 
 	.btn{
 		padding: 5px;
 		font-size: 20px;
-		width: min-content;
+		width: fit-content;
+		text-align: center;
 	}
+
 	body{
 		width: 100%;
 		
+	}
+	.activeFlex{
+		background: rgba(255,175,75,1);
+		display: flex;
 	}
 
 
   }
 
-  @media only screen and (max-width: 365px){
+
+
+  @media only screen and (max-width: 470px){
 	  .mainFooter{
 		  display: flex;
 		  justify-content: center;

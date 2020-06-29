@@ -1,4 +1,10 @@
 
+
+.tape .btn{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 .tape{
     width: 100%;
     height: 100%;
@@ -14,7 +20,9 @@
 }
 
 
-
+.remove{
+    display: none;
+}
 
 h3{
     
@@ -47,14 +55,32 @@ h4{
     
 
 }
-
-.tape1 .part1{
-    margin-left: 300px;
+.tape1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
 }
 
+
+.tape1 .part1 {
+
+display: flex;
+justify-content: flex-end;
+width: 50%;
+
+    
+}
 .tape1 .part1 img{
-    width: 100%;
+    min-width: 500px;
+    
 }
+.tape1 .part2{
+    width: 50%;
+    z-index: 0;
+}
+
+
 .tape2{
     display: flex;
     justify-content: center;
@@ -63,13 +89,10 @@ h4{
     background-size: contain;
     width: 100%;
     height: 100%;
-   
-    
-    
+    padding-top: 200px;
+
 }
-.orange{
-    background-color: orangered;
-}
+
 
 
 .tape2 .part1{
@@ -84,15 +107,17 @@ h4{
 }
 
 
-.tape2 .part2{
-    
-    display: flex;
-    align-items: center;
-    
-    margin-top:550px;
-    margin-left:150px;
-}
 
+.tape2{
+    display: flex;
+flex-direction: column;
+}
+.tape2 .buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+} 
 
 .part1 .btn{
     width: fit-content;
@@ -172,7 +197,7 @@ h4{
 .tape3 .part1{
     background: #ff722b;
     width: 700px;
-    
+    text-align: center;
     height: min-content;
     margin-top:300px;
     
@@ -182,7 +207,8 @@ h4{
 
 .tape3 img{
     margin-top:300px;
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-right: 25px;
     
     width: 80%;
     box-shadow: 0px 2px 148px 28px #f5d3a4;
@@ -191,7 +217,7 @@ h4{
 }
 .tape4{
     width: 100%;
-    height: 1100px;
+    height: 900px;
     background-image: url('images/svg/orange strip 2.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,7 +256,7 @@ width: 100%;
     margin: 70px;
 }
 .ticks{
-    background-color:#ff9a65;
+    background-color:wheat;
     border-radius: 1500px 0px 1500px 0px;
     display: flex;
     flex-direction: row;
@@ -245,15 +271,15 @@ width: 100%;
 .tape5{
 
 width: 100%;
-height: 900px;
+height: 600px;
 background-image: url('images/svg/plus orange.svg');
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 }
 
 .tape5 .part1{
     background: #ff722b;
-    width: 1000px;
+    width: 60%;
     
     height: min-content;
     margin-top:75px;
@@ -261,7 +287,271 @@ background-size: contain;
     padding: 30px;
     color: white;
 }
+.tape5 .part2{
+    width: 0px;
+    height: 0px;
+}
 
 .tape5 .btn{
     float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 530px) {
+
+}
+  
+  
+
+
+
+
+@media only screen and (max-width: 1600px) {
+
+
+h3{
+    
+    font-size:70px ;
+}
+.splText{
+    
+    font-size: 100px;
+}
+
+.ticks{
+    border-radius: 200px 0px 200px 0px;
+}
+.ticks .btn{
+    margin-right: 20px;
+}
+.tape4{
+    background-size: 100% 1000px;
+}
+
+}
+@media only screen and (max-width: 1355px) {
+    .btn{
+        width: fit-content;
+    }
+
+    .tape1 .part1 img{
+        width: 250px;
+    }
+    h3{
+        
+        font-size:60px ;
+    }
+    .splText{
+        
+        font-size: 80px;
+    }
+.tape2{
+    background-size: 100% 1250px;
+}
+
+.tape2 .partFull {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tape3 img{
+    margin-top:300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    width: 80%;
+    box-shadow: 0px 2px 148px 28px #f5d3a4;
+
+
+}
+
+.tape5{
+
+
+    background-size: contain;
+    }
+
+}
+
+
+@media only screen and (max-width: 1070px) {
+.tape3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.tape3 .part1{
+    margin-top:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    width: 100%;
+    
+}
+
+
+
+.tape3 .part2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+.tape3 img{
+    margin-top:30px;
+}
+
+
+.tape1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.tape1 .part1 img{
+    min-width: 100%;
+}
+h3{
+    
+    font-size:60px ;
+}
+.splText{
+    
+    font-size: 80px;
+}
+.tape4 .part2{
+    display: flex;
+    justify-content: center;
+}
+.ticks{
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px 0px 100px 0px;
+    width: 500px;
+    height: 100%;
+}
+
+.col{
+    width: 300px;
+}
+.oneTick,.twoTick,.threeTick{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    margin: 20px;
+}
+.tickCol1 .threeTick{
+    margin-bottom: 0;
+}
+.tape1 .part2{
+    width: min-content;
+} 
+}
+
+@media only screen and (max-width: 882px) {
+.splText{
+    
+        font-size: 60px;
+    }
+.tape1 h3{
+    
+        font-size:30px ;
+    }
+
+.tape3 img{
+        
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+}
+@media only screen and (max-width: 780px) {
+    .tape1{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tape1 .part2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .tape3 .part2{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 681px){
+.tape2 , .tape4{
+    background-size: cover;
+}
+}
+
+
+@media only screen and (max-width: 645px){
+    .tape1 img{
+        max-width: 70%;
+    }
+
+.tape1 .part1{
+        width: fit-content;
+    }
+.splText{
+    
+        font-size:50px ;
+    }
+.tape1 h3{
+    
+        font-size:20px ;
+    }
+}
+
+
+
+@media only screen and (max-width: 570px) {
+
+    
+    .tape1 .part1{
+        max-width: 60%;
+    }
+
+    .tape5 h3{
+        font-size: 30px;
+    }
+    .tape5 h1{
+        font-size: 15px;
+    }
+
+}
+  
+

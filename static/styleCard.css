@@ -8,12 +8,34 @@
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: min-content;
   
   
 }
+#search{
+  width: fit-content;
+}
+#search input{
 
+  width: 400px;
+  min-height: 50px;
+
+  border: none;
+  background-color: salmon;
+  font-size: 20px;
+  padding: 20px;  
+  margin: 10px;
+  border-radius: 7px;
+  color: white;
+  
+  box-shadow: 2px 3px 63px -12px rgba(237,126,95,1);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 #cardSpl{
   border-radius: 5px;
   min-width: 300px;
@@ -48,7 +70,7 @@ background-color: grey;
 }
 
 .chinaVal{
- color: rgb(255, 91, 69)
+ color: #cdd631;
 }
 
 .otherVal{
@@ -74,7 +96,7 @@ background-color: grey;
   margin: 20px;
   width: 200px;
   height: 60px;
-  background-color: rgb(255, 91, 69);
+  background-color: #cdd631;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -106,27 +128,18 @@ align-items: center;
   width: 200px;
   text-overflow: clip;
 }
+
 @media only screen and (max-width: 530px) {
 
 
-
+#search input{
+  width: fit-content;
+}
 
 
 
 
 }
 
-
-@media only screen and (max-width: 882px) {
-  
-
-  
- 
-}
-@media only screen and (max-width: 1200px) {
-
-
- 
-}
 
 

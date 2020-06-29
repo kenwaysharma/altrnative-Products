@@ -12,7 +12,12 @@ block content
     h2=message
     -var n = 1
     -var dataB = databaseSent;
+    
     .content
+        .searchBar
+            #search
+                input(type="text" id="myInput" onkeyup="myFunctionAlt()" placeholder="Enter product name...")
+                //input(type="text" id="myInput2" onkeyup="myFunction2Alt()" placeholder="Search by 'Made in' country...")
         .cards
             #cardSpl
                 .code
@@ -29,7 +34,7 @@ block content
                         button.btn.btnH(onclick="FunctionH()") Close
             each val in dataB
 
-                .card
+                #card.card
                     .num
                         h3=n++
                     .cardContent
@@ -39,7 +44,7 @@ block content
                                     | Chinese Product
                             br
                             h5.chinaVal="Name: "
-                            h3=val.chinese.name
+                            h3.imp=val.chinese.name
                 
                             h5.chinaVal="Company: "
                             h3=val.chinese.company
@@ -72,7 +77,7 @@ block content
                 
                             h5.catVal="Sub Category: "
                             h3=val.productCategory.subCategory
-                            a(href="/entries/edit/"+val._id)="Edit"
+                            //a(href="/entries/edit/"+val._id)="Edit"
                 
 block script 
     script

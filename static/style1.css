@@ -20,7 +20,22 @@ form{
     
     
 }
-
+.hoverTip img{
+    width: 13px;
+}
+.hoverTip .tipShow{
+    display: none;
+    background-color: grey;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 3px;
+    color: white;
+    max-width: 300px ;
+}
+.hoverTip:hover .tipShow{
+    display: block;
+    transition: all 0.5s;
+}
 .formDiv{
 
     width: 100%;
@@ -44,6 +59,7 @@ form{
     flex-direction: column;
     width: 50%;
     padding: 10px;
+    
 }
 
 .otherLabel{

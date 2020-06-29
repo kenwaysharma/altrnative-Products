@@ -14,24 +14,39 @@ block content
                 h2=message
 
         .formDiv
-            form(action="/secretTop" method="POST" class="myEntries")
+            form(action="/post" method="POST" class="myEntries")
 
                 .country
                     .chineseLabel
                         label(for="Chinese Name") Chinese Product Name:
+                        .hoverTip
+                            img(src="images/question mark1.png", alt="" )
+                            span.tipShow Write name of Chinese product
                         input(type="text" id="productName" name="chinese_name" )
                         
                         label(for="Chinese Company" ) Product Company Name:
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write company name of Chinese product
                         input(type="text" id="productCompany" name="chinese_company"  )
 
                     .otherLabel
                         label(for="Other Name") Alternative Product Name:
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write name of an alternative product originating from different country
                         input(type="text" id="productName" name="other_name")
                         
                         label(for="Other Company" ) Company Name:
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write company name of the alternative product
                         input(type="text" id="productCompany" name="other_company" )
 
                         label(for="Other Country" ) Company Country(Optional):
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Select country of origin of the company
                         select#country(name='other_country')
                             option(value='') Select
                             option(value='Afganistan') Afghanistan
@@ -282,12 +297,21 @@ block content
                             option(value='Zimbabwe') Zimbabwe
 
                         label(for="Other Made In") Made in:
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write name of the country where the alternative product was made
                         textarea( name="other_madeIn" id="textInput")
                            
                     .commonProductType
                         label(for="Product Category") Product Category:
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write the main product category. Example: Electronics, Kitchenware, etc. 
                         input(type="text" id="productCategory" name="productCategory_mainCategory")
                         label(for="Product Category") Sub Category (Optional):
+                        .hoverTip
+                                img(src="images/question mark1.png", alt="" )
+                                span.tipShow Write sub category. Example: Laptop, Grinder, etc. 
                         input(type="text" id="subCategory" name="productCategory_subCategory" )
                         
                         

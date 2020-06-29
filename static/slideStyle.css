@@ -44,3 +44,37 @@ span{
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1600px) {
+.slide-container img{
+        width:900px;
+        
+
+        
+    
+}
+     
+    }
+
+@media only screen and (max-width: 1445px) {
+        .slide-container img{
+                width:700px;
+     
+        }
+            
+ }
+
+ @media only screen and (max-width: 720px) {
+    .slide-container img{
+            width:100%;
+ 
+    }
+        
+}

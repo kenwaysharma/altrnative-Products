@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
     head
+        
         // Global site tag (gtag.js) - Google Analytics
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-167829594-1')
         script.
@@ -8,10 +9,10 @@ html(lang="en")
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'UA-167829594-1');
-
+        
         link(rel='shortcut icon' href='/images/Logo/favicon.ico' type='image/x-icon')
         link(rel='icon' href='/images/Logo/favicon.ico' type='image/x-icon')
-
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
         block title
         style
             include ../static/layoutStyle.css
@@ -23,44 +24,54 @@ html(lang="en")
         block title
     body
         .gradiantMainDiv
-            header
-                .logo
-                    a(href="/home")
-                        img(src="/images/Logo/default.png" )
-                        
-    
+            header  
                 .navbar
+                    .logo
+                        .img
+                            a(href="/home")
+                                img(src="/images/Logo/default.png" )
+                        .bars
+                            a.toggle(href="#")
+                                span.bar
+                                span.bar
+                                span.bar
+
                     nav
-                        ul
-                            li 
-                                a(href='/home')
-                                    button.btn Home
-                            li 
-                                a(href='/entries')
-                                    button.btn.splTextalt Altrnatives
 
-                            li 
-                                    a(href='/about')
-                                        button.btn About
-                                    .dropDown
-                                        a(href='/team')
-                                            button.btn Make in India Program
-                                        a(href='/makeinIndia')
-                                            button.btn.splbtn Atma Nirbhar Program
-                                        a(href='/atmaNirbhar')
-                                            button.btn.splbtn Meet the team
-                                        a(href='/faq')
-                                            button.btn.splbtn Faq
+                        .topnav
+                            ul.navUL
+                                li 
+                                    a(href='/home')
+                                        button.btn Home
+                                li 
+                                    a(href='/entries')
+                                        button.btn.splTextalt Altrnatives
+
+                                li 
+                                        a(href='/about')
+                                            button.btn About
+                                        .dropDown
+                                            a(href='/makeinIndia')
+                                                | Make in India Program
+                                            //a(href='/makeinIndia')
+                                                //| Atma Nirbhar Program
+                                            //a(href='/atmaNirbhar')
+                                                //| Meet the team
+                                            //a(href='/faq')
+                                                //| Faq
 
                             
                             
-                            li
-                                a(href="/feedback")
-                                    button.btn Feedback
-                                                          
-                            li
-                                a(href="/secretTop")
-                                    button.btn Post(Temporary Button)
+                                li
+                                    a(href="/feedback")
+                                        button.btn Feedback
+
+                                li
+                                    a(href="/post")
+                                        button.btn Post
+
+
+
             block content
          
             footer
@@ -76,5 +87,6 @@ html(lang="en")
                     .subFooter
                         
                 
-
+        script
+            include ../static/respNav.js
         block script

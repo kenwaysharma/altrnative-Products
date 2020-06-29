@@ -42,6 +42,7 @@ th{
 }
 
 #search input{
+  
   box-sizing:border-box ;
   border: none;
   font-size: 15px ;
@@ -191,6 +192,7 @@ th{
 }
 
 #search input{
+  width: min-content;
   box-sizing:border-box ;
   border: none;
   padding: 10px;
