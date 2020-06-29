@@ -17,7 +17,7 @@ const feedDB= new mongoose.model('feedBack')//database collection name
 
 
 //Home Page
-router.get('/home', (req, res) => {
+router.get(['/','/home'], (req, res) => {
   res.render('home',{ title: 'Home' });
 });
 
@@ -32,7 +32,7 @@ router.get('/makeinindia', (req, res) => {
 
 
 //About Entries
-router.get(['/','/entries'],(req, res) => {
+router.get('/entries',(req, res) => {
     database.find({}, function (err, database) {
         if (err) {
             console.log(err);

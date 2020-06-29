@@ -40,8 +40,101 @@ body{
 .gradiantMainDiv{
 	background-color: #efdecd;
 }
+.subFooter{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	
+}
+.menuFooter{
+	width: 33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 30px;
+	border-left: 1px solid #bf885e ;
+	border-right: 1px solid #bf885e ;
+	
+	
+}
+.subFooter h4{
+	
+	color: tomato;
+	
+}
+.menuFooter ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.menuFooter li{
+text-decoration: none;
+list-style: none;
+margin: 10px;
+cursor: pointer;
+color: chocolate;
+	
+}
+.subFooter a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.menuFooter a:hover{
+	
+	color: white;
+	
+}
+.subFooter h6{
+	font-size: 13px;
+}
+.privacyPol{
+	margin: 10px;
+}
 
+.contactOptions {
+	padding-top:30px ;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	
+}
+.contactOptions h5{
+	text-align: center;
+	width: 100%;
+	font-size: 17px;
+}
+.email{
+	margin: 10px;
+}
+hr{
+	border: 0;
+	height: 0;
+	border-top: 1px solid #bf885e;
+	border-bottom: 1px solid #bf885e;
+}
+.smIcons{
+	padding-top:30px ;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
 
+}
+.footerDiv .smIcons img{
+width: 50px;
+height: auto;
+margin: 10px;
+	
+}
 
 .navbar .btn{
 	padding: 10px 20px 10px 20px;
@@ -149,6 +242,7 @@ nav{
 }
 .footerDiv img{
 	width: 150px;
+	
 }
 
 footer{
@@ -159,10 +253,11 @@ footer{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	background-color: #edc9af;
+	
 }
 
 
-ul{
+ nav ul{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -177,7 +272,7 @@ ul{
 	        justify-content: center;
 }
 
-ul li{
+nav ul li{
 	margin: 10px;
 }
 
@@ -208,7 +303,7 @@ ul li{
 	margin: 5px;
 }
 
-ul li:hover .dropDown{
+nav ul li:hover .dropDown{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -239,7 +334,7 @@ ul li:hover .dropDown{
 .subFooter{
 	background-color: #e8b997;
 	width: 100%;
-	height: 400px;
+	height: fit-content;
 	padding: 20px;
 }
 
@@ -417,7 +512,7 @@ ul li:hover .dropDown{
 		text-align: center;
 
 	}
-li{
+nav li{
 		margin: 5px;
 		
 	}
@@ -446,9 +541,27 @@ li{
 
   }
 
+  @media only screen and (max-width: 700px){
 
+	  .subFooter{
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+	  }
+	  .menuFooter{
+		  border-left: 0;
+		  border-right: 0;
+		  border-top: 1px solid #bf885e ;
+		  border-bottom: 1px solid #bf885e ;
+		  
+	  }
+	  .footerDiv img{
+		width: 100px;
+	}
+  }
 
   @media only screen and (max-width: 470px){
+
 	  .mainFooter{
 		  display: -webkit-box;
 		  display: -ms-flexbox;
@@ -464,5 +577,7 @@ li{
 		  height: -moz-fit-content;
 		  height: fit-content;
 	  }
+
+
 
   }

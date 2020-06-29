@@ -67,6 +67,9 @@ b{
 }
 .contentFold ul li{
     background-color: #ebb8aa;
+    margin: 10px;
+    list-style: none;
+    width: fit-content;
     font-weight: bolder;
     border-radius: 10px;
     padding: 10px;
