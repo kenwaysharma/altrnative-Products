@@ -486,8 +486,8 @@ nav ul li:hover .dropDown{
 	.topnav{
 
 		display: none;
-		width: 50%;
-		border-radius: 500px 0 0px 0;
+		width: 100%;
+		
 		
 	}
 
