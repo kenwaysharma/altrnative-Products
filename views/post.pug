@@ -8,6 +8,11 @@ block style
 
 block content
     .gradiantDiv
+        .mainHeadingDiv
+            h1 POST
+            h2 an altrNATIVE
+            a(href="#anchor1")
+                button.btn Click here for help
         -var message = msg || '';
         .messages
             .succMsg
@@ -93,7 +98,6 @@ block content
                             option(value='Chad') Chad
                             option(value='Channel Islands') Channel Islands
                             option(value='Chile') Chile
-                            option(value='China') China
                             option(value='Christmas Island') Christmas Island
                             option(value='Cocos Island') Cocos Island
                             option(value='Colombia') Colombia
@@ -318,5 +322,22 @@ block content
                        
 
                 button.btn Post
+        #anchor1.panelDiv
+            h2 Here are some tips to get started
+            .panels
 
+                button.accordion Section 1
+                .panel
+                  p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, impedit. Aliquam quaerat impedit molestias iure, obcaecati labore dolor nostrum ab eaque odio possimus dicta quasi quae vel iusto ex eum?
+                button.accordion Section 2
+                
+                .panel
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident eaque at est, architecto, temporibus, magnam dolorum dolore explicabo beatae laudantium impedit perspiciatis repellendus minima labore ea sapiente ex rerum!
+                button.accordion Section 3
+                .panel
+                  p Lorem ipsum...
+   
+block script
+    script 
+        include ../static/accordion.js
 

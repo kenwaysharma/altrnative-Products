@@ -33,7 +33,9 @@ router.get('/makeinindia', (req, res) => {
 
 //About Entries
 router.get('/entries',(req, res) => {
-    database.find({}, function (err, database) {
+    database.find({},null,{sort:{
+      date: -1 //Sort by Date Added DESC
+  }}, function (err, database) {
         if (err) {
             console.log(err);
         }else{

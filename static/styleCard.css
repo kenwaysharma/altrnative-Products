@@ -12,10 +12,20 @@
           box-sizing: border-box;
 }
 
+.dateFor{
+    margin: 10px;
+}
+.dateFor h4{
+    text-align: center;
+}
 
-
-
-
+.date {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .content{
 
 display: -webkit-box;

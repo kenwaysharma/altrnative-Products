@@ -30,9 +30,14 @@ block content
                         h4 ALTRNATIVE
                     .divCat
                         h4 CATEGORY
+                    .dateFor        
+                        h4 Date Format: DD-MM-YYYY
                     .hideButton
                         button.btn.btnH(onclick="FunctionH()") Close
             each val in dataB
+                -var dateDay=val.date.getDate()
+                -var dateMonth=val.date.getMonth()+1
+                -var dateYear=val.date.getYear()-100+2000
 
                 #card.card
                     .num
@@ -77,7 +82,13 @@ block content
                 
                             h5.catVal="Sub Category: "
                             h3=val.productCategory.subCategory
-                            a(href="/entries/edit/"+val._id)="Edit"
+                            
+                        .date
+                            h4.date
+                                u
+                                    | Date
+                            h3=dateDay +'-' + dateMonth +'-' + dateYear
+                        a(href="/entries/edit/"+val._id)="Edit"
                 
 block script 
     script

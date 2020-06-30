@@ -154,8 +154,8 @@ margin: 10px;
 .btn{
 	padding: 10px 20px 10px 20px;
 	border: none;
-  	
-  	color: black;
+  	background-color: coral;
+  	color: white;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;

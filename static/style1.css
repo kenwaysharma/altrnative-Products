@@ -33,10 +33,60 @@ form{
     
     
 }
+.panels{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgba(255, 255, 255, 0.308);
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    
+  }
+  
+  .active, .accordion:hover {
+    background-color: coral;
+  }
+  .panelDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 150px;
+
+  }
+  .panelDiv h2{
+    color: coral;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .panel { 
+    
+    width: 90%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 .hoverTip img{
     width: 13px;
 }
 .hoverTip .tipShow{
+    
     display: none;
     background-color: grey;
     padding: 2px;
@@ -47,9 +97,20 @@ form{
 }
 .hoverTip:hover .tipShow{
     display: block;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    
+}
+.mainHeadingDiv{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    text-align: center;
+}
+
+.mainHeadingDiv h1{
+    color: coral;
 }
 .formDiv{
 
@@ -203,5 +264,20 @@ select{
    #textInput{
     
     width: 100%;
+}
+  }
+
+  @media only screen and (max-width: 590px){
+.mainHeadingDiv h1{
+    font-size: 55px ;
+}
+.mainHeadingDiv h2{
+    font-size: 45px ;
+}
+.mainHeadingDiv .btn{
+    font-size: 15px ;
+}
+.panelDiv h2{
+    font-size: 30px;
 }
   }
