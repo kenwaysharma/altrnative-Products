@@ -8,5 +8,4 @@ toggle.addEventListener('click', myfunc2)
 
 function myfunc2(e){
     navbarLinks.classList.toggle('activeFlex')
-
 }
