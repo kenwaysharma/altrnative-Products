@@ -48,7 +48,7 @@ form{
     color: rgb(34, 34, 34);
     cursor: pointer;
     padding: 18px;
-    width: 90%;
+    width: 60%;
     border: none;
     text-align: left;
     outline: none;
@@ -75,7 +75,7 @@ form{
   }
   .panel { 
     
-    width: 90%;
+    width: 60%;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -265,6 +265,12 @@ select{
     
     width: 100%;
 }
+  }
+
+  @media only screen and (max-width: 750px){
+      .accordion,.panel{
+          width: 90%;
+      }
   }
 
   @media only screen and (max-width: 590px){
